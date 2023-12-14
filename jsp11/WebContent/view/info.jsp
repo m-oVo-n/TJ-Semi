@@ -12,7 +12,7 @@
 		if(pwd == frm.pass.value) {
 			document.location.href="MemberFrontController?cmd=member_delete&ID="+m_id+"&pass="+pwd;
 		} else {
-			alert("비밀번호가 틀립니다.");
+			alert("비밀번호가 틀렸.");
 			history.go(0);
 		}
 	}
