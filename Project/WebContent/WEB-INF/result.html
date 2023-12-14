@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>learn-bootstrap</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<style type="text/css">
+body {
+        height:100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            background-color: #16354D;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+        }
+
+        h1, a {
+            display: inline-block;
+            margin: 0;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            margin-right: 20px;
+            font-size: 15px;
+        }
+        
+        .main {
+        	margin-left: 120px;
+        }
+
+        /* 드롭다운 스타일 */
+        .menu {
+            position: relative;
+            display: inline-flex;
+            margin-right: 120px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .menu .language {
+            position: relative;
+        }
+
+        .menu .language .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #16354D;
+            min-width: 100px;
+        }
+
+        .menu .language:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px 16px;
+        }
+
+    .div{ /* 제일 큰 div 박스*/
+        width:95%;
+        margin-top: 3%;
+        height:90vh;
+        max-width:100%;
+        margin-bottom:5%;
+    }
+
+    .div1{ /* 왼쪽 div , result창 div*/
+        width:43%;
+        height:100%;
+        border :1px solid black;
+        position:relative;
+        float:inline-start;
+        margin-left:17%;
+        padding:10px;
+        max-width:80%;
+        padding-bottom:5%;
+    }
+
+    .div1-1{ /*오른쪽 위,아래 div 박스묶음*/
+        width:22%;
+        height:100%;
+        position:relative;
+        float:inline-end;
+        margin-right: 15%;
+        max-width: 80%;
+    }
+    .div2{ /* 오른쪽 위 div박스 - 지도 */
+        width:100%;
+        height:55%;
+        position: relative;
+    }
+    .div3{ /* 오른쪽 아래 div 박스 - 앱 광고*/
+        width:100%;
+        height:40vh;
+        position: relative;  
+        padding: 5% 5% 5% 5%;
+        background-color: #e4e4e5;
+        margin-top:2%;
+    }
+    .div3_fontsize1{ /* 오른쪽 아래 div 광고 폰트 사이즈1*/
+        font-size:30px;
+        font-weight: bold;
+        padding:10% 0 -5% 10%;
+    }
+    .div3_fontsize2{ /* 오른쪽 아래 div 광고 폰트 사이즈2*/
+        font-size:20px;
+        font-weight: bold;
+        padding-left:10%;
+        padding-top:5%;
+    }
+    .div1_select{ /*버스, 기차, 항공 선택*/
+        position:relative;
+        color: black;
+    }
+    .div1_traffic{
+        border-bottom : 2px solid #d2d2d4;
+        margin-bottom:1%;
+    }
+    .traffic_select{ /* 최소시간, 직항, 출발시간 ,금액 주루룩 선택*/
+
+    }
+    .select_result{ /* 조회결과창 박스*/
+        background-color: #e4e4e5;
+        width:95%;
+        height:20%;
+        margin-top:20px;
+    }
+
+    /* #wrapper{
+    height: auto;
+    min-height: 105%;
+    text-align: center;
+    } */
+    footer{
+        background-color: #16354D;
+        height:30px;
+        bottom:0;
+    }
+    .footer_li{
+        list-style-type:none;
+        margin-left:70%;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <header>
+            <div class="main">
+                <a href="main.html">
+                    <h1>YATA</h1>
+                </a>
+            </div>
+    
+            <div class="menu">
+                <div class="language">
+                    <a href="#" class="language">Language ▼</a>
+                    <div class="dropdown">
+                        <a href="#">한국어</a>
+                        <a href="#">영어</a>
+                        <a href="#">중국어</a>
+                        <a href="#">일본어</a>
+                    </div>
+                </div>
+    
+                <a href="내예약정보.html">나의예약</a>
+                <a href="로그인.html">로그인</a>
+            </div>
+            
+        </header>
+        <!-- 상단 내비게이션
+        <nav class="navbar navbar-expand-sm navbar-dark top p-1 vh-20 text-white">
+            <div class="container-fluid p-3"> 
+                <a class="navbar-brand logo" href="#">YATA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Language</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">한국어</a></li>
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">中国人</a></li>
+                                <li><a class="dropdown-item" href="#">日本語</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">나의예약</a>
+                        </li>
+                        <li class="nav-item right">
+                            <a class="nav-link text-white" href="#">로그인</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+                <div class="container-fluid justify-content-around search">
+                    <div class="box">출발지</div>
+                    <div class="box">도착지</div>
+                    <div class="box">가는날</div>
+                    <div class="box">오는날</div>
+                    <div class="box">인원</div>
+                    <div><button type="button" class="btn btn-outline-light me-2">검색</button></div>
+                </div>
+               
+              
+            </div>
+            
+        </nav> -->
+
+      <div class="div"> <!--div박스 전체(왼편 버스,기차,항공  + 오른쪽 지도 전체 포함)-->
+        <div class="div1"><!--버스,기차,항공편 결과창 -->
+            <div class="div1_traffic"><!--버스, 기차, 항공 선택-->
+                <ul class="nav justify-content-around">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">버스</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">기차</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">항공</a>
+                    </li>
+                  </ul>
+            </div>
+            <!-- 최소소요시간, 직항, 출발시간 ,금액-->
+            <div class="btn-group  traffic_select1 " role="group" aria-label="Button group with nested dropdown">
+                <div class="btn-group mx-4 " role="group"> <!--최단소요시간-->
+                    <button id="btnGroupDrop2" type="button" class="btn btn-outline-secondary p dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                      <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                      <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                    </ul>
+                  </div>
+                  <div class="btn-group" role="group"> <!--직항-->
+                    <button id="btnGroupDrop2" type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                      <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                      <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                    </ul>
+                  </div>
+                  <div class="btn-group" role="group"> <!-- 출발시간-->
+                    <button id="btnGroupDrop2" type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                      <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                      <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                    </ul>
+                  </div>
+                  <div class="btn-group" role="group"> <!--금액-->
+                    <button id="btnGroupDrop2" type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                      <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                      <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                    </ul>
+                  </div>
+            </div>
+            <!--조회 결과-->
+            <div class="select_result"></div>
+            <div class="select_result"></div>
+            <div class="select_result"></div>
+            <div class="select_result"></div>
+        </div><!--버스,기차,항공편 결과창-->
+        <div class="div1-1"> <!-- 결과창 옆 오른쪽 박스 두개 묶음-->
+            <div class="div2"> <!--오른쪽 위 div박스 - 지도 -->
+                <img src="img/img1.jpg" width="100%" height="100%">
+            </div>
+            <div class="div3"><!-- 오른쪽 아래 div 박스 - 앱 광고 -->
+                <p class="div3_fontsize1">YATA App으로<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;더 편리하게<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                이용하세요!!!</p>
+                <p class="div3_fontsize2"><img src="./img/img1.jpg" width="50px" height="50px">For Android</p>
+                <p class="div3_fontsize2"><img src="./img/img2.jpg" width="50px" height="50px">For Ios</p>
+            </div> 
+        </div>
+      </div>
+
+
+    <footer class="container-fluid">
+            <ul class="d-inline-flex" >
+                <li class="nav-item footer_li"><a href="#" class="nav-link px-2 text-white">Home</a></li>
+                <li class="nav-item footer_li"><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                <li class="nav-item footer_li"><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                <li class="nav-item footer_li"><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                <li class="nav-item footer_li"><a href="#" class="nav-link px-2 text-white">About</a></li>
+            </ul>
+    </footer>
+</div>
+  
+</body>
+</html>
