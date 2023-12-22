@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="result.css">
+<title>result.html</title>
+</head>
+
+<body>
+  <header>
+    <div class="main">
+    	<a href="main">
+      		<h1>YATA</h1>
+      	</a>
+    </div>
+
+    <div class="menu">
+      <div class="language">
+        <a href="#" class="language" style="margin-top: 5px;">Language ▼</a>
+        <div class="dropdown">
+          <a href="#">한국어</a>
+          <a href="#">영어</a>
+          <a href="#">중국어</a>
+          <a href="#">일본어</a>
+        </div>
+      </div>
+
+      <a href="myReservation.html" style="margin-top:3px;">나의예약</a>
+      <a href="login.html" style="margin-top:3px;">로그인</a>
+    </div>
+  </header>
+
+  <div class="search-container">
+    <div class="search-box">
+      <input type="text" id="departure" name="departure" placeholder="출발지" required>
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="destination" name="destination" placeholder="도착지" required>
+    </div>
+
+    <div class="search-box">
+      <input type="date" id="date" name="date" required style="color:gray; font-size: 11px;">
+    </div>
+
+    <div class="search-box">
+      <select id="passengers" name="passengers" required style="color:gray; font-size: 11px;">
+        <option>인원 수 선택</option>
+        <option value="1">1명</option>
+        <option value="2">2명</option>
+        <option value="3">3명</option>
+      </select>
+    </div>
+
+    	<button type="button" onclick="search()">검색</button>
+  	</div>
+  	
+  	<div class="left-container">
+		<div class="transport">
+			<button type="button" class="bus" onclick="">버스</button>
+			<button type="button" class="train" onclick="">기차</button>
+			<button type="button" class="airplane" onclick="">항공</button>
+		</div>
+	  
+	  	
+	  	
+	  	
+	  	<div class="horizontal-line"></div>
+	  	
+	  	<div class="align">
+	  		<div class="a1">
+	  		
+	  			<select id="p1" name="price">
+	  				<option value="cheap">가격 낮은 순</option>
+	  				<option value="expensive">가격 높은 순</option>
+	  			</select>
+	  			
+	  		</div>
+	  	</div>
+		<div class="result-container">
+		  	<div class="result">
+		  		<div class="a">
+					<img src="img/airplane.png" alt="airplane">&nbsp;&nbsp;&nbsp;&nbsp;
+					<h3>대한항공</h3>
+					<p>00:15<span>&nbsp;&nbsp;&nbsp;-----2h 10m-----&nbsp;&nbsp;&nbsp;</span>02:25</p>
+				</div>
+				<div class="c">
+					<h2>200,000원</h2>
+				</div>
+			</div>
+			
+			<div class="result">
+		  		<div class="a">
+					<img src="img/airplane.png" alt="airplane">&nbsp;&nbsp;&nbsp;&nbsp;
+					<h3>대한항공</h3>
+					<p>00:15<span>&nbsp;&nbsp;&nbsp;-----2h 10m-----&nbsp;&nbsp;&nbsp;</span>02:25</p>
+				</div>
+				<div class="c">
+					<h2>200,000원</h2>
+				</div>
+			</div>
+			
+			<div class="result">
+		  		<div class="a">
+					<img src="img/airplane.png" alt="airplane">&nbsp;&nbsp;&nbsp;&nbsp;
+					<h3>대한항공</h3>
+					<p>00:15<span>&nbsp;&nbsp;&nbsp;-----2h 10m-----&nbsp;&nbsp;&nbsp;</span>02:25</p>
+				</div>
+				<div class="c">
+					<h2>200,000원</h2>
+				</div>
+			</div>
+			
+			<div class="result">
+		  		<div class="a">
+					<img src="img/airplane.png" alt="airplane">&nbsp;&nbsp;&nbsp;&nbsp;
+					<h3>대한항공</h3>
+					<p>00:15<span>&nbsp;&nbsp;&nbsp;-----2h 10m-----&nbsp;&nbsp;&nbsp;</span>02:25</p>
+				</div>
+				<div class="c">
+					<h2>200,000원</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+		
+			<div id="side">
+				<iframe
+					id="map"
+					src="ad_2.html"
+					name="right">
+				</iframe>
+			
+				
+				<iframe
+					id="advertise"
+					src="ad.html"
+					name="right">	
+				</iframe>
+			</div>
+	
+		<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+		<script type="text/javascript" src="result.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>header_search</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+  <header>
+    <div class="main">
+    	<a href="main">
+      		<h1>YATA</h1>
+      	</a>
+    </div>
+
+    <div class="menu">
+      <div class="language">
+        <a href="#" class="language" style="margin-top: 5px;">Language ▼</a>
+        <div class="dropdown">
+          <a href="#">한국어</a>
+          <a href="#">영어</a>
+          <a href="#">중국어</a>
+          <a href="#">일본어</a>
+        </div>
+      </div>
+
+      <a href="내예약정보.html" style="margin-top:5px;">나의예약</a>
+      <a href="로그인.html" style="margin-top:5px;">로그인</a>
+    </div>
+  </header>
+
+  <div class="search-container">
+    <div class="search-box">
+      <label for="departure" style="color:#16354D;" >출발지</label>
+      <input type="text" id="departure" name="departure" placeholder="서울남부터미널" required>
+    </div>
+
+    <div class="search-box">
+      <label for="destination" style="color:#16354D;">도착지</label>
+      <input type="text" id="destination" name="destination" placeholder="대전시외버스터미널" required>
+    </div>
+
+    <div class="search-box">
+      <label for="date" style="color:#16354D;">날짜 선택</label>
+      <input type="date" id="date" name="date" required>
+    </div>
+
+    <div class="search-box">
+      <label for="passengers" style="color:#16354D;">인원 수</label>
+      <select id="passengers" name="passengers" required>
+      
+        <option value="1">1명</option>
+        <option value="2">2명</option>
+        <option value="3">3명</option>
+      </select>
+    </div>
+
+    <button type="button" onclick="search()">검색</button>
+  </div>
+  
+  	<iframe
+		id="advertise"
+		src="ad.html"
+		name="right">	
+	</iframe>
+	
+</body>
+</html>
