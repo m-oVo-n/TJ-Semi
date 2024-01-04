@@ -1,0 +1,170 @@
+/* 전체 */
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 20px;
+	font-weight: bold;
+}
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+    background-color: white;
+}
+/* 헤더 */
+header {
+	height: 180px;
+	width: 100%;
+	padding: 20px 0;
+	background: url("../img/sky1.jpg");
+	background-size: cover;
+}
+.headDiv {
+	min-width: 1050px;
+	width: 1050px;
+	margin: auto;
+}
+.headDiv a{
+    color:white;
+    text-decoration: none;
+}
+header li {
+	color:aliceblue;
+	font-size: 18px;
+}
+.right {
+	display: flex;
+	flex-direction: row;
+}
+.right li {
+	margin-left: 30px;
+}
+.head {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.title {
+	font-size: 35px;
+}
+#language {
+	border: none;
+	background-color: transparent;
+	color: aliceblue;
+	font-size: 18px;
+	font-weight: bold;
+}
+/* 푸터 */
+footer {
+    background-color: #7d9bfd;
+    width: 100%;
+    height: 60px;
+}
+.f{
+	display: flex;
+	flex-direction: row;
+	min-width: 1050px;
+	width: 1050px;
+	margin: 0 auto;
+	height: 100%;
+	align-items: center;
+}
+.yata {
+	font-size: 25px;
+}
+footer a {
+	color: aliceblue;
+	margin-right: 30px;
+	text-decoration: none;
+}
+.infoBox {
+    width: 1050px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+.info {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.info span {
+    font-size: 30px;
+    font-weight: bold;
+}
+.info span.count {
+    font-size: 20px;
+}
+form {
+    width: 1050px;
+    max-width: 1050px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.seatBox {
+    padding: 10px 80px 10px 80px;
+    background-color: rgb(232, 239, 244);
+    border-radius: 5px;
+}
+.special, .normal {
+    width: 890px;
+}
+form ul {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
+    justify-content: space-between;
+}
+.special li, .normal li{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(197, 222, 237);
+    text-align: center;
+    line-height: 60px;
+    border-radius: 5px;
+}
+.totalP li {
+    font-size: 20px;
+}
+.aisle {
+    justify-content: center;
+    margin: 50px 0;
+}
+input {
+    width: 1050px;
+    max-width: 1050px;
+    border: none;
+    background-color: rgb(193, 205, 222);
+    border-radius: 5px;
+    height: 40px;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+input:hover {
+    box-shadow: inset 1px 1px 5px 2px lightgray;
+}
+li input[type="checkbox"] {
+	display: none;
+}
+li label {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+ul li.sfalse {
+	pointer-events: none; /* 포인터 이벤트 비활성화 */
+    color: #999; /* 비활성화된 스타일을 나타내는 색상 */
+}
+li label:hover {
+	box-shadow: 1px 1px 5px 2px lightgray;
+}
+label:has(input[type="checkbox"]:checked) {
+    background-color: gray;
+    color: white;
+}
