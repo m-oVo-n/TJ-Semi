@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            background-color: #16354D;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 30px;
+        }
+
+        h1, a {
+            display: inline-block;
+            margin: 0;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            margin-right: 20px;
+            font-size: 15px;
+        }
+        
+        .main {
+        	margin-left: 120px;
+        }
+
+        /* 드롭다운 스타일 */
+        .menu {
+            position: relative;
+            display: inline-flex;
+            margin-right: 120px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .menu .language {
+            position: relative;
+        }
+
+        .menu .language .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #16354D;
+            min-width: 100px;
+        }
+
+        .menu .language:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main">
+        	<a href="main.html">
+            	<h1>YATA</h1>
+            </a>
+        </div>
+
+        <div class="menu">
+            <div class="language">
+                <a href="#" class="language">Language ▼</a>
+                <div class="dropdown">
+                    <a href="#">한국어</a>
+                    <a href="#">영어</a>
+                    <a href="#">중국어</a>
+                    <a href="#">일본어</a>
+                </div>
+        	</div>
+
+            <a href="내예약정보.html">나의예약</a>
+            <a href="로그인.html">로그인</a>
+        </div>
+        
+    </header>
+
+
+</body>
+</html>
