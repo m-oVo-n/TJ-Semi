@@ -1,0 +1,226 @@
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 20px;
+	font-weight: bold;
+}
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+header {
+	height: 180px;
+	width: 100%;
+	padding: 20px 0;
+	background: url("../img/sky1.jpg");
+	background-size: cover;
+}
+.headDiv {
+	min-width: 1050px;
+	width: 1050px;
+	margin: auto;
+}
+header li {
+	color:aliceblue;
+	font-size: 18px;
+}
+header a{
+	color:white;
+	text-decoration: none;
+}
+.right {
+	display: flex;
+	flex-direction: row;
+}
+.right li {
+	margin-left: 30px;
+}
+.head {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.title {
+	font-size: 35px;
+}
+.head .bigTitle {
+	font-size: 35px;
+    padding: 0;
+    color: aliceblue;
+}
+#language {
+	border: none;
+	background-color: transparent;
+	color: aliceblue;
+	font-size: 18px;
+	font-weight: bold;
+}
+footer {
+    background-color: #7d9bfd;
+    width: 100%;
+    height: 60px;
+}
+.f{
+	display: flex;
+	flex-direction: row;
+	min-width: 1050px;
+	width: 1050px;
+	margin: 0 auto;
+	height: 100%;
+	align-items: center;
+}
+.yata {
+	font-size: 25px;
+}
+footer a {
+	color: aliceblue;
+	margin-right: 30px;
+	text-decoration: none;
+}
+.infoBox {
+    width: 1050px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+.info {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.info span {
+    font-size: 30px;
+    font-weight: bold;
+}
+.info span.type {
+    font-size: 20px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1050px;
+    max-width: 1050px;
+    margin: 50px auto;
+}
+.classType {
+    width: 500px;
+    height: 400px;
+    background-color: rgb(232, 239, 244);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.selectAge {
+    width: 500px;
+    height: 400px;
+    background-color: rgb(232, 239, 244);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 40px 0 20px 0;
+    border-bottom: 1px solid gray;
+    width: 400px;
+}
+.radioBtn {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.box ul{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    font-size: 17px;
+}
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"] + label {
+    display: inline-block;
+    padding: 20px;
+    width: 180px;
+    height: 210px;
+    background-color: rgb(197, 222, 237);
+    border-radius: 5px;
+    position: relative;
+}
+input[type="radio"] + label:hover {
+    background-color: rgb(172, 192, 205);
+}
+input[type="radio"] + label#sp {
+    margin-right: 20px;
+}
+input[type="radio"]:checked + label {
+    background-color: gray;
+    color: white;
+}
+label span {
+    font-size: 17px;
+    font-weight: bold;
+
+}
+.price {
+    position: absolute;
+    bottom: 20px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 250px;
+    margin-top: 30px;
+    background-color: rgb(197, 222, 237);
+    border-radius: 5px;
+}
+.box li {
+    width: 70px;
+    text-align: center;
+}
+.box button {
+    border: none;
+    border-radius: 2px;
+    width: 20px;
+}
+.box button:hover {
+    background-color: gray;
+    color: white;
+}
+#goBtn {
+    width: 1050px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(193, 205, 222);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+    margin-bottom: 30px;
+}
+#goBtn:hover {
+    background-color: rgb(162, 173, 188);
+}
+form{
+    width: 1050px;
+    margin: 0 auto;
+}
+
+.spZeroPrice {
+    pointer-events: none; /* 포인터 이벤트 비활성화 */
+    color: #999; /* 비활성화된 스타일을 나타내는 색상 */
+  }
